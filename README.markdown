@@ -6,11 +6,11 @@ Add-on Package for [Concrete5 CMS](http://www.concrete5.org/ "concrete5.org"); H
 
 **VideoJS**
 
-JavaScript for HTML5 video player
+JavaScript for HTML5 video player - <http://videojs.com/>
 
 **Flowplayer free**
 
-Flash fallback for playing videos for browsers that do not support `<video>` element
+Flash fallback for playing videos for browsers that do not support `<video>` element - <http://flowplayer.org/index.html>
 
 ### Notes:
 
