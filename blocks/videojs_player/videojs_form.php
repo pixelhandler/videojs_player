@@ -33,7 +33,7 @@ defined('C5_EXECUTE') or die(_("Access Denied."));
 			</td>
 			<td>
 				<?php  echo $al->file('ccm-b-mp4', 'fMp4ID', t('Choose .mp4 Video'), $fMp4ID); ?>
-				<p><?php  echo t('Choose a file with a .mp4 extension as common HTML5 video format; also used for flash fallback, ');?></p>
+				<p><?php  echo t('Choose a file with a .mp4 extension as common HTML5 video format; also used for flash fallback.');?></p>
 			</td>
 		</tr>
 		<tr>
@@ -55,6 +55,7 @@ defined('C5_EXECUTE') or die(_("Access Denied."));
 <div class="ccm-block-field-group">
 	<h2><?php  echo t('Maximum Dimensions')?></h2>
 	<table border="0" cellspacing="0" cellpadding="0">
+		<tr><td colspan="4">Input the maximum width and height in pixels:</td></tr>
 		<tr>
 			<td><?php  echo t('Width')?></td>
 			<td><?php  echo  $form->text('width', intval($width), array('style' => 'width: 40px')); ?></td>
