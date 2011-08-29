@@ -1,6 +1,8 @@
 # videojs_player package for Concrete5.org CMS
 
-## Open source software inclucded
+Add-on Package for [Concrete5 CMS](http://www.concrete5.org/ "concrete5.org"); HTML5 video block with Flash fallback.
+
+## Open source software included
 
 **VideoJS**
 
@@ -24,5 +26,6 @@ For info on HTML5 video see : <http://diveintohtml5.org/video.html> which has a 
 
 ### References:
 
+* <http://www.concrete5.org/>
 * <http://diveintohtml5.org/video.html>
 * <http://www.mirovideoconverter.com/>
