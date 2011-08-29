@@ -11,5 +11,5 @@ $fMp4ID  = null;
 $fOgvID  = null;
 $fWebmID = null;
 
-include($this->getBlockPath() .'/videojs_form.php');
+$this->inc('videojs_form.php');
 ?>
