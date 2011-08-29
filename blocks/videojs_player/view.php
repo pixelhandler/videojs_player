@@ -8,7 +8,7 @@ $pstr = $controller->getFilePosterObject()->getRelativePath();
 	<div style="padding:8px 0px; ?>px;">
 		<?php  echo t('Video disabled in edit mode.'); // padding-top: <?php echo round($height / 2) - 10;?>
 		<?php if ($pstr && $pstr != '') { ?>
-		<img src="<?php echo $pstr; ?>" width="<?php  if ($width > 1) { echo $width; } ?>" height="<?php  if ($height > 1) { echo $height; } ?>" alt="Poster Image" title="No video playback capabilities." />
+		<img src="<?php echo $pstr; ?>" width="<?php  if ($width > 1) { echo $width; } ?>" height="<?php  if ($height > 1) { echo $height; } ?>" alt="Poster Image" title="<?php  echo t('No video playback capabilities.') ?>" />
 		<?php } ?>
 	</div>
 </div>
@@ -36,12 +36,12 @@ $pstr = $controller->getFilePosterObject()->getRelativePath();
 			<param name="allowfullscreen" value="true" />
 			<param name="flashvars" value='config={"playlist":["<?php echo $pstr; ?>", {"url": "<?php  echo $mp4; ?>","autoPlay":false,"autoBuffering":true}]}' />
 			<?php // Image Fallback. Typically the same as the poster image. ?>
-			<img src="<?php echo $pstr; ?>" width="<?php  if ($width > 1) { echo $width; } ?>" height="<?php  if ($height > 1) { echo $height; } ?>" alt="Poster Image" title="No video playback capabilities." />
+			<img src="<?php echo $pstr; ?>" width="<?php  if ($width > 1) { echo $width; } ?>" height="<?php  if ($height > 1) { echo $height; } ?>" alt="Poster Image" title="<?php  echo t('No video playback capabilities.') ?>" />
 			<?php // Download links provided for devices that can't play video in the browser. ?>
-			<p class="vjs-no-video"><strong>Download Video:</strong>
-				<a href="<?php  echo $mp4; ?>">MP4</a>,
-				<a href="<?php  echo $ogv; ?>">WebM</a>,
-				<a href="<?php  echo $webm; ?>">Ogg</a><br />
+			<p class="vjs-no-video"><strong><?php  echo t('Download Video:') ?></strong>
+				<a href="<?php  echo $mp4; ?>"><?php  echo t('MP4') ?></a>,
+				<a href="<?php  echo $ogv; ?>"><?php  echo t('WebM') ?></a>,
+				<a href="<?php  echo $webm; ?>"><?php  echo t('Ogg') ?></a><br />
 			</p>
 		</object>
 	</video>

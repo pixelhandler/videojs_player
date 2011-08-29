@@ -5,7 +5,7 @@
 
 		protected $btInterfaceWidth = 760;
 		protected $btInterfaceHeight = 540;
-		protected $btTable = 'videojs_player';
+		protected $btTable = 'btvideojs_player';
 		protected $btCacheBlockOutput = true;
 		protected $btCacheBlockOutputOnPost = true;
 		protected $btCacheBlockOutputForRegisteredUsers = true;
