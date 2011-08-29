@@ -23,5 +23,5 @@ if ($controller->getFilePosterID() > 0) {
 	$fWebmID = $controller->getFileWebmObject();
 }
 
-$this->inc('videojs_form.php');
+include($this->getBlockPath() .'/videojs_form.php'); # don't use which looses $al -> $this->inc('videojs_form.php');
 ?>
