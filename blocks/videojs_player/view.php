@@ -8,7 +8,7 @@ $pstr = $controller->getFilePosterObject()->getRelativePath();
 	<div style="padding:8px 0px; ?>px;">
 		<?php  echo t('Video disabled in edit mode.'); // padding-top: <?php echo round($height / 2) - 10;?>
 		<?php if ($pstr && $pstr != '') { ?>
-		<img src="<?php echo $pstr; ?>" width="<?php  if ($width > 1) { echo $width; } ?>" height="<?php  if ($height > 1) { echo $height; } ?>" alt="Poster Image" title="<?php  echo t('No video playback capabilities.') ?>" />
+		<img src="<?php echo $pstr; ?>" width="<?php  if ($width > 1) { echo $width; } ?>" height="<?php  if ($height > 1) { echo $height; } ?>" alt="<?php  echo t('Poster Image') ?>" title="<?php  echo t('No video playback capabilities.') ?>" />
 		<?php } ?>
 	</div>
 </div>

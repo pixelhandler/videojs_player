@@ -8,7 +8,7 @@
 		protected $btTable = 'btvideojs_player';
 		protected $btCacheBlockOutput = true;
 		protected $btCacheBlockOutputOnPost = true;
-		protected $btCacheBlockOutputForRegisteredUsers = true;
+		protected $btCacheBlockOutputForRegisteredUsers = false;
 
 		/** 
 		 * Used for localization. If we want to localize the name/description we have to include this
