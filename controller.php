@@ -4,7 +4,7 @@ class VideojsPlayerPackage extends Package {
 
 	protected $pkgHandle = 'videojs_player';
 	protected $appVersionRequired = '5.4';
-	protected $pkgVersion = '1.0.0';
+	protected $pkgVersion = '1.0.2';
 	
 	public function getPackageDescription() { 
 		return t("HTML5 VideoJS player with Flowplayer (free) add-on for concrete5.");
