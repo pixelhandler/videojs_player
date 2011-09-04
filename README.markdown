@@ -24,6 +24,12 @@ For info on HTML5 video see : <http://diveintohtml5.org/video.html> which has a 
 4. WebM video (.webm): Choose a file with a .webm extension; HTML5 video format e.g. for MSIE 9+
 5. Maximum Dimensions: Input the maximum width and height in pixels
 
+**Requirements:**
+
+* Set your 'Allowed File Types' under 'File Manager > Access' tab to include file types: mp4, ogv, webm  
+  e.g. yourdomain.com/index.php/dashboard/files/access/ 
+* Format and upload files in the above mentioned formats, see references below for instructions.
+
 ### References:
 
 * <http://www.concrete5.org/>
