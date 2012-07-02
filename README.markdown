@@ -14,7 +14,7 @@ Flash fallback for playing videos for browsers that do not support `<video>` ele
 
 ### Notes:
 
-For info on HTML5 video see : <http://diveintohtml5.org/video.html> which has a tutorial for video conversion for web using the (free) Miro Video Converter. As HTML5 video implementations vary per web browser, to use this block you will need to prepare (4) files: .mp4, .ogv, .webm and have a preview or "poster" image. Also, if needed, Flowplayer (free) plays your .mp4 as flash media content.
+For info on HTML5 video see : <http://diveintohtml5.info/video.html> which has a tutorial for video conversion for web using the (free) Miro Video Converter. As HTML5 video implementations vary per web browser, to use this block you will need to prepare (4) files: .mp4, .ogv, .webm and have a preview or "poster" image. Also, if needed, Flowplayer (free) plays your .mp4 as flash media content.
 
 *Block supports videos playback using the following*
 
@@ -27,11 +27,39 @@ For info on HTML5 video see : <http://diveintohtml5.org/video.html> which has a 
 **Requirements:**
 
 * Set your 'Allowed File Types' under 'File Manager > Access' tab to include file types: mp4, ogv, webm  
-  e.g. yourdomain.com/index.php/dashboard/files/access/ 
+  e.g. yourdomain.com/index.php/dashboard/system/permissions/file_types/ 
 * Format and upload files in the above mentioned formats, see references below for instructions.
+
+In Concrete admin:
+
+Navigate to 'System & Settings > Allowed File Types'
+
+Add: `, ogv, webm` after xml or your last entry.
+
+**Recommendations:**
+
+Example updates to your .htaccess file:
+
+    #php settings
+    <IfModule mod_php5.c>
+    php_value post_max_size 40M
+    php_value upload_max_filesize 40M
+    php_value memory_limit 300M
+    php_value max_execution_time 259200
+    php_value max_input_time 259200
+    </IfModule>
+
+    # video file formats
+    AddType video/ogg ogv
+    AddType video/mp4 mp4
+    AddType video/webm webm
+
+**Source Code:**
+
+* Github: <https://github.com/pixelhandler/videojs_player>
 
 ### References:
 
 * <http://www.concrete5.org/>
-* <http://diveintohtml5.org/video.html>
+* <http://diveintohtml5.info/video.html>
 * <http://www.mirovideoconverter.com/>

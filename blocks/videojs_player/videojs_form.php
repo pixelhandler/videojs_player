@@ -17,7 +17,7 @@ defined('C5_EXECUTE') or die(_("Access Denied."));
 	<span><?php echo t('HTML5 Video Block') ?></span>
 </h1>
 <p>
-	<?php  echo t('For info on HTML5 video see : <a href="http://diveintohtml5.org/video.html" target="_blank">http://diveintohtml5.org/video.html</a> which has a tutorial for video conversion for web using the (free) <a href="http://www.mirovideoconverter.com/">Miro Video Converter</a>. As HTML5 video implementations vary per web browser, to use this block you will need to prepare (4) files: .mp4, .ogv, .webm and have a preview or "poster" image. Also, if needed, Flowplayer (free) plays your .mp4 as flash media content.')?>
+	<?php  echo t('For info on HTML5 video see : <a href="http://diveintohtml5.info/video.html" target="_blank">http://diveintohtml5.info/video.html</a> which has a tutorial for video conversion for web using the (free) <a href="http://www.mirovideoconverter.com/">Miro Video Converter</a>. As HTML5 video implementations vary per web browser, to use this block you will need to prepare (4) files: .mp4, .ogv, .webm and have a preview or "poster" image. Also, if needed, Flowplayer (free) plays your .mp4 as flash media content.')?>
 </p>
 <div class="ccm-block-field-group">
 	<h2><?php  echo t('Video Source Files') ?></h2>
